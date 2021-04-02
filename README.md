@@ -22,5 +22,11 @@ If web scraper does not work properly, please try the following solutions:
 ## Changing Login Values
 Go to your respective schoology login page in Chrome(works in other browsers, but I don't know the procedure) and use "Ctrl+Shift+I" to open up builtin inspector. Then, press on the "Network" tab on the top bar. Then, keeping the inspector open, enter your Schoology login credentials and press submit. Then, click on the first event that should have just popped up in the "Network" tab. Make sure that for "Request Method" it says "POST" and not "GET". Then, scroll down to the form data section. Under this section, you will see all the parameters that need to be passed in order for login. For changes to the code, you will need to change "linkForLogin"(Line 15) to the link of your schoology login page. Lastly, add the login parameters from the inspector just as is in the original code on line 21. Save and try the code again. If web scraper still doesn't work, please file a issue. Please replicate the scenario with as simple an example as possible.
 
+## Dependencies
+* BeautifulSoup4
+* lxml
+* requests
+* getpass
+
 ## Open-Source
 This program is completely open-source. Any expansions on this program are permitted by all users.
